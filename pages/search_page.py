@@ -38,7 +38,7 @@ class SearchTickets:
         # sleep(3)
         browser.element('[data-qa="trip-buy-button"]').click()
         # sleep(3)
-        browser.element('[data-qa=backBtn]').click()
+        browser.element('[data-qa=backBtn]').wait(5).click()
 
         browser.element('.vue-badge').click()
 
