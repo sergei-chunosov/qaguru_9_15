@@ -12,3 +12,6 @@ class ChangeCurrency:
 
     def assert_currency(self):
         browser.element('.curr-selector span').should(have.text('THB'))
+
+
+change_currency = ChangeCurrency()

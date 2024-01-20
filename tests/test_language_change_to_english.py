@@ -1,9 +1,8 @@
-from pages.language_change import LanguageChange
+from pages.language_change_to_english import language_change
 import allure
 
 
-def test_currency():
-    language_change = LanguageChange()
+def test_language_change():
 
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         language_change.open()

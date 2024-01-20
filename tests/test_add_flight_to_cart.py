@@ -1,5 +1,5 @@
 from data.user_data import flight
-from pages.search_page import SearchTickets
+from pages.add_flight_to_cart import SearchTickets
 import allure
 
 

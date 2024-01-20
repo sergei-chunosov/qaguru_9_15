@@ -1,9 +1,8 @@
-from pages.change_currency import ChangeCurrency
+from pages.currency_change_to_THB import change_currency
 import allure
 
 
 def test_currency():
-    change_currency = ChangeCurrency()
 
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         change_currency.open()
