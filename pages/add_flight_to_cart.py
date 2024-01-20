@@ -48,5 +48,3 @@ class SearchTickets:
             flight.departure_time,
             flight.arrival_time
         ))
-
-        # sleep(10)
