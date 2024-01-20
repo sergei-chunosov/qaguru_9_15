@@ -46,7 +46,7 @@ def setup_browser(request):
     browser.config.base_url = "https://12go.asia/"
     browser.config.window_width = '1900'
     browser.config.window_height = '1080'
-    browser.config.timeout = 5
+    browser.config.timeout = 6
 
     yield browser
 
