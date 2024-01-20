@@ -16,7 +16,7 @@ class SearchTickets:
         browser.element('[data-qa=select-list]').all('li').first.click()
 
         browser.element('[data-qa=datepicker-button]').click()
-        tomorrow = date.today() + timedelta(days=3)
+        tomorrow = date.today() + timedelta(days=4)
         browser.element(f'[data-qa="day({tomorrow})"]').click()
         browser.element('[data-qa=datepicker-done-button]').click()
 
