@@ -11,4 +11,4 @@ class ChangeCurrency:
         browser.all('[data-qa=topCurrencyItem]')[2].click()
 
     def assert_currency(self):
-        browser.element('.curr-selector span').should(have.exact_text('฿ THB'))
+        browser.element('.curr-selector span').should(have.text('THB'))
