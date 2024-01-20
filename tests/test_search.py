@@ -3,14 +3,11 @@ from pages.search_page import SearchTickets
 import allure
 
 
-def test_add_form():
+def test_add_ticket():
     search_tickets = SearchTickets()
 
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         search_tickets.open()
-
-    with allure.step('Выбираем необходимую валюту'):
-        search_tickets.change_currency()
 
     with allure.step('Ищем подходящий рейс'):
         search_tickets.search_flight()

@@ -1,4 +1,3 @@
-from time import sleep
 from selene import browser, have, command
 from datetime import date, timedelta
 from data.user_data import Flight
@@ -8,10 +7,6 @@ class SearchTickets:
 
     def open(self):
         browser.open('en')
-
-    def change_currency(self):
-        browser.element('.link.curr-selector').click()
-        browser.all('[data-qa=topCurrencyItem]')[2].click()
 
     def search_flight(self):
         browser.all('[data-qa=select-button]').first.type('Bangkok')
