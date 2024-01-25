@@ -1,10 +1,9 @@
 from data.user_data import flight
-from pages.add_flight_to_cart import SearchTickets
+from pages.add_flight_to_cart import search_tickets
 import allure
 
 
 def test_add_ticket():
-    search_tickets = SearchTickets()
 
     with allure.step('Открываем тестируемую форму https://12go.asia/en'):
         search_tickets.open()
